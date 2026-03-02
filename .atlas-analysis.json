@@ -1,0 +1,175 @@
+{
+  "projectType": "saas",
+  "projectName": "Syft Space",
+  "projectDescription": "Privacy-preserving AI platform for creating queryable RAG endpoints while keeping data under your control.",
+  "theme": "palm",
+  "primaryColor": "#4C51BF",
+  "lightColor": "#9F7AEA",
+  "darkColor": "#2D3748",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Get Started",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "introduction",
+              "what-is-syft-space",
+              "use-cases"
+            ]
+          },
+          {
+            "group": "Installation",
+            "pages": [
+              "installation/overview",
+              "installation/desktop-app",
+              "installation/docker",
+              "installation/from-source"
+            ]
+          },
+          {
+            "group": "Quick Start",
+            "pages": [
+              "quickstart",
+              "developer-token"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/overview",
+              "concepts/architecture",
+              "concepts/how-it-works"
+            ]
+          },
+          {
+            "group": "Components",
+            "pages": [
+              "components/datasets",
+              "components/models",
+              "components/endpoints",
+              "components/policies"
+            ]
+          },
+          {
+            "group": "Working with Data",
+            "pages": [
+              "guides/uploading-documents",
+              "guides/connecting-databases",
+              "guides/vector-databases"
+            ]
+          },
+          {
+            "group": "Creating Endpoints",
+            "pages": [
+              "guides/creating-endpoints",
+              "guides/querying-endpoints",
+              "guides/response-types",
+              "guides/testing-endpoints"
+            ]
+          },
+          {
+            "group": "Publishing & Access",
+            "pages": [
+              "guides/publishing-to-syfthub",
+              "guides/access-control",
+              "guides/rate-limiting",
+              "guides/pricing"
+            ]
+          },
+          {
+            "group": "Desktop App",
+            "pages": [
+              "desktop/overview",
+              "desktop/system-tray",
+              "desktop/auto-updates"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Introduction",
+            "pages": [
+              "api/overview",
+              "api/authentication",
+              "api/errors"
+            ]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/datasets",
+              "api/models",
+              "api/endpoints",
+              "api/policies",
+              "api/settings"
+            ]
+          },
+          {
+            "group": "Query API",
+            "pages": [
+              "api/query-endpoint",
+              "api/query-parameters",
+              "api/response-format"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Resources",
+        "groups": [
+          {
+            "group": "Reference",
+            "pages": [
+              "resources/architecture",
+              "resources/database-providers",
+              "resources/model-providers",
+              "resources/syfthub-network"
+            ]
+          },
+          {
+            "group": "Community",
+            "pages": [
+              "resources/contributing",
+              "resources/faq",
+              "resources/support"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Privacy-preserving RAG endpoints",
+    "Multi-database support (Weaviate, Qdrant, ChromaDB)",
+    "Multi-model support (OpenAI, Anthropic, Ollama, vLLM)",
+    "Docker auto-provisioning",
+    "Desktop app with system tray integration",
+    "SyftHub marketplace integration",
+    "Access control and rate limiting",
+    "Usage analytics and monitoring"
+  ],
+  "publicApiSurface": [
+    "POST /api/v1/endpoints",
+    "GET /api/v1/endpoints",
+    "GET /api/v1/endpoints/{id}",
+    "POST /api/v1/endpoints/{slug}/query",
+    "POST /api/v1/datasets",
+    "GET /api/v1/datasets",
+    "POST /api/v1/models",
+    "GET /api/v1/models",
+    "POST /api/v1/policies",
+    "GET /api/v1/policies",
+    "GET /api/v1/settings",
+    "PUT /api/v1/settings"
+  ]
+}
